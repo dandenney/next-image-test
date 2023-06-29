@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -107,6 +107,29 @@
 .logo {
   position: relative;
 }
+
+.section {
+  max-inline-size: 600px;
+  margin-inline: auto;
+  margin-block-end: 4rem;
+}
+
+.section p {
+  line-height: 1.45;
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.5rem;
+}
+
+.section img {
+  height: auto;
+  max-width: 100%;
+}
+
+.section .img-container {
+  position: relative;
+  aspect-ratio: 3 / 2;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
